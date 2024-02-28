@@ -1,0 +1,38 @@
+/* ResortItem.css */
+.resort-item {
+    background-color: #f9f9f9;
+    border: 1px solid #ddd;
+    margin-bottom: 10px;
+    padding: 10px;
+    border-radius: 8px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+  }
+  
+  .resort-item:hover {
+    background-color: #f0f0f0;
+  }
+  
+  .resort-summary h3 {
+    margin: 0;
+    color: #0056b3;
+  }
+  
+  .forecast {
+    display: flex;
+    overflow-x: auto;
+    margin-top: 10px;
+    gap: 10px;
+  }
+  
+  .forecast-item {
+    min-width: 80px;
+    background-color: #e9ecef;
+    padding: 5px;
+    border-radius: 5px;
+    text-align: center;
+  }
+  
+  .forecast-item p {
+    margin: 5px 0;
+  }

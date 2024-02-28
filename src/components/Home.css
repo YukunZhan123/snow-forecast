@@ -1,0 +1,97 @@
+.home-container {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    color: #333;
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+    background-color: #f5f5f5;
+    background-image: linear-gradient(to right top, #65dfc9, #6cdbeb); /* Soft gradient background */
+    background-size: cover;
+    background-position: center;
+  }
+  
+  .navbar {
+    background-color: #0652DD; /* Deep blue */
+    padding: 10px 20px;
+  }
+  
+  .navbar ul {
+    list-style: none;
+    display: flex;
+    justify-content: center;
+    padding: 0;
+  }
+  
+  .navbar ul li {
+    margin: 0 15px;
+  }
+  
+  .navbar ul li a {
+    color: white;
+    text-decoration: none;
+    font-weight: bold;
+  }
+  
+  .home-header {
+    text-align: center;
+    background-color: rgba(255, 255, 255, 0.9); /* More opaque background */
+    margin: 20px;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 4px 6px rgba(0,0,0,0.1); /* Soft shadow for depth */
+  }
+  
+  .search-bar {
+    display: flex;
+    gap: 10px;
+    margin: 20px auto; /* Center align the search bar */
+    max-width: 600px; /* Limit search bar width */
+  }
+  
+  .search-input, .search-btn, .close-btn {
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    outline: none;
+    width: 100%; /* Full width for input */
+  }
+  
+  .search-btn, .close-btn {
+    width: auto; /* Auto width for buttons */
+    padding: 10px 20px; /* Larger padding for buttons */
+  }
+  
+  .error-message {
+    color: #dc3545;
+    text-align: center; /* Center error message */
+  }
+  
+  .search-results, .resorts-list {
+    margin: 20px 0;
+  }
+  
+  .resort-item {
+    background-color: #ffffff;
+    padding: 15px;
+    margin-bottom: 10px;
+    border-radius: 5px;
+    box-shadow: 0 2px 4px rgba(0,0,0,0.1); /* Soft shadow for depth */
+    transition: transform 0.2s; /* Smooth transition for hover effect */
+  }
+  
+  .resort-item:hover {
+    transform: translateY(-5px); /* Slight raise effect on hover */
+  }
+  
+  .add-btn:hover, .search-btn:hover, .close-btn:hover {
+    filter: brightness(110%); /* Slight brightness increase on hover */
+  }
+  
+  .footer {
+    margin-top: auto;
+    background-color: #0652DD;
+    color: white;
+    text-align: center;
+    padding: 10px;
+  }
+  
