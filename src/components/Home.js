@@ -13,6 +13,7 @@ const Home = () => {
   const [showSearch, setShowSearch] = useState(false); // State to control search results display
   const [showMap, setShowMap] = useState(false);
   const [userLocation, setUserLocation] = useState(null);
+  const [isLogin, setIsLogin] = useState(false);
 
   const userId = JSON.parse(localStorage.getItem('user'))?._id;
 
@@ -91,6 +92,9 @@ const Home = () => {
         <nav className="navbar">
         <ul>
           <li><a href="/">Home</a></li>
+          {isLogin ? <li><a href="/login">Login</a></li> : <li><a href="/logout">Logout</a></li>}
+          
+          <li><a href="/register">Register</a></li>
           <li><a href="/about">About</a></li>
           <li><a href="/contact">Contact</a></li>
           {/* Add more navigation links as needed */}

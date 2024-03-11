@@ -6,7 +6,7 @@
   "scripts": {
     "start": "react-scripts start",
     "build": "react-scripts build",
-    "test": "react-scripts test"
+    "test": "TOKEN_SECRET=clky9912 ADMIN=Clky9912 jest"
   },
   "keywords": [],
   "author": "",
@@ -24,7 +24,8 @@
     "react-dom": "^18.2.0",
     "react-leaflet": "^4.2.1",
     "react-router-dom": "^6.21.3",
-    "react-scripts": "^5.0.1"
+    "react-scripts": "^5.0.1",
+    "redis": "^4.6.13"
   },
   "browserslist": {
     "production": [
@@ -37,5 +38,11 @@
       "last 1 firefox version",
       "last 1 safari version"
     ]
+  },
+  "devDependencies": {
+    "jest": "^27.5.1",
+    "mongodb-memory-server": "^9.1.6",
+    "redis-mock": "^0.56.3",
+    "supertest": "^6.3.4"
   }
 }

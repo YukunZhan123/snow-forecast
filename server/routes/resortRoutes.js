@@ -1,4 +1,5 @@
 const express = require('express');
+
 const router = express.Router();
 const Resort = require('../models/Resort');
 const { fetchWeather } = require('../utils/weatherAPI');
